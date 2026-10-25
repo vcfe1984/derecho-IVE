@@ -1,0 +1,366 @@
+{
+ "title": "Derecho Propio IVE",
+ "version": "b3c799e3",
+ "built": "2026-10-25 15:32",
+ "groups": [
+  {
+   "id": "fund",
+   "title": "Textos fundamentales",
+   "docs": [
+    "constituciones",
+    "espiritualidad"
+   ]
+  },
+  {
+   "id": "vida",
+   "title": "Vida religiosa",
+   "docs": [
+    "vida-consagrada",
+    "vida-fraterna-en-comun",
+    "vida-contemplativa",
+    "vida-liturgica",
+    "hermanos-religiosos",
+    "gobierno",
+    "rama-oriental",
+    "tercera-orden"
+   ]
+  },
+  {
+   "id": "form",
+   "title": "Formación",
+   "docs": [
+    "vocaciones",
+    "seminarios-menores",
+    "noviciado",
+    "seminarios-mayores",
+    "formacion-intelectual",
+    "direccion-espiritual"
+   ]
+  },
+  {
+   "id": "apos",
+   "title": "Apostolado",
+   "docs": [
+    "parroquias",
+    "mision-ad-gentes",
+    "misiones-populares",
+    "predicacion-de-la-palabra-de-dios",
+    "catequesis",
+    "ejercicios-espirituales",
+    "evangelizacion-de-la-cultura",
+    "ecumenismo",
+    "oratorio"
+   ]
+  }
+ ],
+ "docs": [
+  {
+   "id": "constituciones",
+   "title": "Constituciones",
+   "short": "Const.",
+   "edition": "26.9",
+   "source": "IVE-Constituciones y Directorio de Espiritualidad (26.9).epub",
+   "hash": "1638fb90a1",
+   "words": 33373,
+   "articles": 387,
+   "notes": 362,
+   "images": []
+  },
+  {
+   "id": "espiritualidad",
+   "title": "Directorio de Espiritualidad",
+   "short": "DEsp",
+   "edition": "26.9",
+   "source": "IVE-Constituciones y Directorio de Espiritualidad (26.9).epub",
+   "hash": "c592d8dd67",
+   "words": 32210,
+   "articles": 324,
+   "notes": 429,
+   "images": []
+  },
+  {
+   "id": "catequesis",
+   "title": "Directorio de Catequesis",
+   "short": "Catequesis",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Catequesis (26.9).epub",
+   "hash": "6432cf5946",
+   "words": 20354,
+   "articles": 92,
+   "notes": 97,
+   "images": []
+  },
+  {
+   "id": "direccion-espiritual",
+   "title": "Directorio de Dirección espiritual",
+   "short": "Dirección espiritual",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Dirección espiritual (26.9).epub",
+   "hash": "38bcc19b84",
+   "words": 7509,
+   "articles": 80,
+   "notes": 37,
+   "images": []
+  },
+  {
+   "id": "ecumenismo",
+   "title": "Directorio de Ecumenismo",
+   "short": "Ecumenismo",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Ecumenismo (26.9).epub",
+   "hash": "ed86b8002f",
+   "words": 11320,
+   "articles": 118,
+   "notes": 131,
+   "images": []
+  },
+  {
+   "id": "ejercicios-espirituales",
+   "title": "Directorio de Ejercicios espirituales",
+   "short": "Ejercicios espirituales",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Ejercicios espirituales (26.9).epub",
+   "hash": "07f3ace886",
+   "words": 39280,
+   "articles": 139,
+   "notes": 77,
+   "images": [
+    "data/img/ejercicios-espirituales/6a3fbc1c10.png",
+    "data/img/ejercicios-espirituales/debb76cc2a.png",
+    "data/img/ejercicios-espirituales/8cfdcbb3f2.png",
+    "data/img/ejercicios-espirituales/176b88b3cd.png",
+    "data/img/ejercicios-espirituales/361ea5dcf9.png",
+    "data/img/ejercicios-espirituales/aa7517f9a0.png",
+    "data/img/ejercicios-espirituales/b18398679f.png"
+   ]
+  },
+  {
+   "id": "evangelizacion-de-la-cultura",
+   "title": "Directorio de Evangelización de la cultura",
+   "short": "Evangelización de la cultura",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Evangelización de la cultura (26.9).epub",
+   "hash": "6cf968a24c",
+   "words": 28980,
+   "articles": 242,
+   "notes": 354,
+   "images": []
+  },
+  {
+   "id": "formacion-intelectual",
+   "title": "Directorio de Formación intelectual",
+   "short": "Formación intelectual",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Formación intelectual (26.9).epub",
+   "hash": "1d0326107a",
+   "words": 10219,
+   "articles": 91,
+   "notes": 101,
+   "images": []
+  },
+  {
+   "id": "gobierno",
+   "title": "Directorio de Gobierno",
+   "short": "Gobierno",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Gobierno (26.9).epub",
+   "hash": "1375b43b2d",
+   "words": 9497,
+   "articles": 264,
+   "notes": 71,
+   "images": []
+  },
+  {
+   "id": "hermanos-religiosos",
+   "title": "Directorio de Hermanos religiosos",
+   "short": "Hermanos religiosos",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Hermanos religiosos (26.9).epub",
+   "hash": "61591f526c",
+   "words": 10008,
+   "articles": 118,
+   "notes": 146,
+   "images": []
+  },
+  {
+   "id": "misiones-populares",
+   "title": "Directorio de Misiones populares",
+   "short": "Misiones populares",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Misiones populares (26.9).epub",
+   "hash": "f42c7a3ece",
+   "words": 32703,
+   "articles": 150,
+   "notes": 183,
+   "images": []
+  },
+  {
+   "id": "mision-ad-gentes",
+   "title": "Directorio de Misión ad gentes",
+   "short": "Misión ad gentes",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Misión ad gentes (26.9).epub",
+   "hash": "93376f0cd7",
+   "words": 15329,
+   "articles": 176,
+   "notes": 83,
+   "images": []
+  },
+  {
+   "id": "noviciado",
+   "title": "Directorio de Noviciado",
+   "short": "Noviciado",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Noviciado (26.9).epub",
+   "hash": "0494d78d31",
+   "words": 15386,
+   "articles": 209,
+   "notes": 91,
+   "images": []
+  },
+  {
+   "id": "oratorio",
+   "title": "Directorio de Oratorio",
+   "short": "Oratorio",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Oratorio (26.9).epub",
+   "hash": "21140b5117",
+   "words": 14007,
+   "articles": 62,
+   "notes": 106,
+   "images": []
+  },
+  {
+   "id": "parroquias",
+   "title": "Directorio de Parroquias",
+   "short": "Parroquias",
+   "edition": "26.9b",
+   "source": "IVE-Directorio de Parroquias (26.9b).epub",
+   "hash": "e1f91d5a6d",
+   "words": 13058,
+   "articles": 151,
+   "notes": 119,
+   "images": []
+  },
+  {
+   "id": "predicacion-de-la-palabra-de-dios",
+   "title": "Directorio de Predicación de la palabra de Dios",
+   "short": "Predicación de la palabra de Dios",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Predicación de la palabra de Dios (26.9).epub",
+   "hash": "e96e15cb66",
+   "words": 12102,
+   "articles": 134,
+   "notes": 111,
+   "images": []
+  },
+  {
+   "id": "rama-oriental",
+   "title": "Directorio de Rama oriental",
+   "short": "Rama oriental",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Rama oriental (26.9).epub",
+   "hash": "95745267b9",
+   "words": 18180,
+   "articles": 207,
+   "notes": 204,
+   "images": []
+  },
+  {
+   "id": "seminarios-mayores",
+   "title": "Directorio de Seminarios mayores",
+   "short": "Seminarios mayores",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Seminarios mayores (26.9).epub",
+   "hash": "7172363a23",
+   "words": 30180,
+   "articles": 449,
+   "notes": 724,
+   "images": []
+  },
+  {
+   "id": "seminarios-menores",
+   "title": "Directorio de Seminarios menores",
+   "short": "Seminarios menores",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Seminarios menores (26.9).epub",
+   "hash": "5e1231dc28",
+   "words": 14984,
+   "articles": 162,
+   "notes": 167,
+   "images": []
+  },
+  {
+   "id": "tercera-orden",
+   "title": "Directorio de Tercera orden",
+   "short": "Tercera orden",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Tercera orden (26.9).epub",
+   "hash": "61bbbbea1c",
+   "words": 64661,
+   "articles": 0,
+   "notes": 609,
+   "images": []
+  },
+  {
+   "id": "vida-consagrada",
+   "title": "Directorio de Vida consagrada",
+   "short": "Vida consagrada",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Vida consagrada (26.9).epub",
+   "hash": "3783ea5044",
+   "words": 33418,
+   "articles": 412,
+   "notes": 532,
+   "images": []
+  },
+  {
+   "id": "vida-contemplativa",
+   "title": "Directorio de Vida contemplativa",
+   "short": "Vida contemplativa",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Vida contemplativa (26.9).epub",
+   "hash": "9356b6992b",
+   "words": 14089,
+   "articles": 224,
+   "notes": 208,
+   "images": []
+  },
+  {
+   "id": "vida-fraterna-en-comun",
+   "title": "Directorio de Vida fraterna en común",
+   "short": "Vida fraterna en común",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Vida fraterna en común (26.9).epub",
+   "hash": "9c2a0bfa04",
+   "words": 9655,
+   "articles": 92,
+   "notes": 80,
+   "images": []
+  },
+  {
+   "id": "vida-liturgica",
+   "title": "Directorio de Vida litúrgica",
+   "short": "Vida liturgica",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Vida liturgica (26.9).epub",
+   "hash": "0904cf3e6d",
+   "words": 8385,
+   "articles": 122,
+   "notes": 150,
+   "images": []
+  },
+  {
+   "id": "vocaciones",
+   "title": "Directorio de Vocaciones",
+   "short": "Vocaciones",
+   "edition": "26.9",
+   "source": "IVE-Directorio de Vocaciones (26.9).epub",
+   "hash": "6a4e5f9351",
+   "words": 11286,
+   "articles": 93,
+   "notes": 108,
+   "images": []
+  }
+ ]
+}

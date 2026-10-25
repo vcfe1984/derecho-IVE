@@ -1,0 +1,95 @@
+/* Service worker — offline cache + versioned updates.
+   VERSION and ASSETS are rewritten by tools/build.py on every build. */
+const VERSION = 'ff0e844e3b';
+const ASSETS = [
+ "./",
+ "app.css",
+ "app.js",
+ "data/docs/catequesis.json",
+ "data/docs/constituciones.json",
+ "data/docs/direccion-espiritual.json",
+ "data/docs/ecumenismo.json",
+ "data/docs/ejercicios-espirituales.json",
+ "data/docs/espiritualidad.json",
+ "data/docs/evangelizacion-de-la-cultura.json",
+ "data/docs/formacion-intelectual.json",
+ "data/docs/gobierno.json",
+ "data/docs/hermanos-religiosos.json",
+ "data/docs/mision-ad-gentes.json",
+ "data/docs/misiones-populares.json",
+ "data/docs/noviciado.json",
+ "data/docs/oratorio.json",
+ "data/docs/parroquias.json",
+ "data/docs/predicacion-de-la-palabra-de-dios.json",
+ "data/docs/rama-oriental.json",
+ "data/docs/seminarios-mayores.json",
+ "data/docs/seminarios-menores.json",
+ "data/docs/tercera-orden.json",
+ "data/docs/vida-consagrada.json",
+ "data/docs/vida-contemplativa.json",
+ "data/docs/vida-fraterna-en-comun.json",
+ "data/docs/vida-liturgica.json",
+ "data/docs/vocaciones.json",
+ "data/img/ejercicios-espirituales/176b88b3cd.png",
+ "data/img/ejercicios-espirituales/361ea5dcf9.png",
+ "data/img/ejercicios-espirituales/6a3fbc1c10.png",
+ "data/img/ejercicios-espirituales/8cfdcbb3f2.png",
+ "data/img/ejercicios-espirituales/aa7517f9a0.png",
+ "data/img/ejercicios-espirituales/b18398679f.png",
+ "data/img/ejercicios-espirituales/debb76cc2a.png",
+ "data/library.json",
+ "data/search.json",
+ "fonts/eb-garamond-latin-400-italic.woff2",
+ "fonts/eb-garamond-latin-400-normal.woff2",
+ "fonts/eb-garamond-latin-500-normal.woff2",
+ "fonts/eb-garamond-latin-600-normal.woff2",
+ "fonts/source-serif-4-latin-400-italic.woff2",
+ "fonts/source-serif-4-latin-400-normal.woff2",
+ "fonts/source-serif-4-latin-600-normal.woff2",
+ "icons/apple-touch-icon.png",
+ "icons/icon-192.png",
+ "icons/icon-512.png",
+ "icons/icon-maskable-512.png",
+ "manifest.webmanifest",
+ "robots.txt",
+ "search-worker.js",
+ "vendor/minisearch.js"
+];
+const CACHE = 'ive-' + VERSION;
+
+self.addEventListener('install', e => {
+  e.waitUntil(
+    caches.open(CACHE).then(c => c.addAll(ASSETS.map(u => new Request(u, { cache: 'reload' }))))
+  );
+  // wait for the page to ask before taking over (so the user can choose when to update)
+});
+
+self.addEventListener('activate', e => {
+  e.waitUntil(
+    caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith('ive-') && k !== CACHE).map(k => caches.delete(k))))
+      .then(() => self.clients.claim())
+  );
+});
+
+self.addEventListener('message', e => {
+  if (e.data === 'skipWaiting') self.skipWaiting();
+  if (e.data === 'version' && e.source) e.source.postMessage({ type: 'version', version: VERSION });
+});
+
+self.addEventListener('fetch', e => {
+  const req = e.request;
+  if (req.method !== 'GET') return;
+  const url = new URL(req.url);
+  if (url.origin !== location.origin) return;
+  // navigation → app shell
+  if (req.mode === 'navigate') {
+    e.respondWith(caches.match('./', { cacheName: CACHE }).then(r => r || fetch(req)));
+    return;
+  }
+  e.respondWith(
+    caches.match(req, { cacheName: CACHE, ignoreSearch: true }).then(hit => hit || fetch(req).then(res => {
+      if (res.ok) { const copy = res.clone(); caches.open(CACHE).then(c => c.put(req, copy)); }
+      return res;
+    }))
+  );
+});
